@@ -27,8 +27,8 @@ var httpsOptions = {
   cert: fs.readFileSync('./config/server.crt')
 }
 
-var server = https.createServer(httpsOptions, app);
-//var server = http.createServer(app);
+//var server = https.createServer(httpsOptions, app);
+var server = http.createServer(app);
 
 /**
  * PeerJS server.
